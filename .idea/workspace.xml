@@ -4,41 +4,112 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="123" />
+    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="111">
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/1174542B5E5F158813DE428957A8351B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/2D21AA57BE1981032460D6CE93A95286" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/2FEA2C2EAB4BDECC2AAF0F5266A2B8F0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/687FFFFDEFC988360EAA4283A744B228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/6EB073C0CFE9A271F4741A352E3F9AC4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/AE2194202D9D5AB3593273CD54DDA229" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/E143515717C6DE386157E84BEAA0FBEF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/25CB64F7D8DD5446AFC545B10C25A87F/E7BF3159229F89481532AD0DAF4176E7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/1174542B5E5F158813DE428957A8351B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/14E19ABD49F9F52BA79AF9E7A8D2142A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/687FFFFDEFC988360EAA4283A744B228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/995B86EF8F3E8B8D954ADBB47110B687" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/9975B6EDBB5F82A04E384A6295B6EA16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CCFC302B64DA1F439BAB64231C9278EC/C1A678ECCFA3F9B8C32DBFEF58E8C96B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/05778A3E4A4411EDF48AFFE8BD80E644" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/1174542B5E5F158813DE428957A8351B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/1D7A98ACB3304153EAB05EB0B2E58577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/47F7DF79C487FCB690BD63D754E5CC8B" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/5BF358A121488779AFA48BCCE4777CCC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/687FFFFDEFC988360EAA4283A744B228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/73C0E8C49852CEAC17B928AA9F024B86" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/7C0D4056E3913EF6C0221907E3A5BAAC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/803F8C96FF126710515AF41832403418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/80A3987FA806DFE345EBFECDAC4F9E27" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/81C1C007E7776B6FCDA9D84BC3CD3B08" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/82308888A9515FFCD28DAFB294CF787C" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/8239C4CC08A18936F18B1C4B84056632" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/A5B45659023958693C779C0BB40B6A11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/A9C1A19D8F1F6AEB7FDFC295455B5F11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/B80BA4A3DD9213B9D9E948566CF6F546" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/BA9F59CE4272D6103CD23455919A59DB" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/BD3BA0A6A235F8EADCBC752FBD056DF0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/C4CE9911144296E05FBDF4273A77A76D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/CC99A5058A20AD3D05AD7C9A3FFC4EDD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/DB0E39F0B83260A97AF6AE6EEC8FD9D5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/E940A5AFE093216716B1B0C4779C56B0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/EC3AEF428E831F35317AB3E97454F015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/CD8B13B08604B34CA2119FB019238612/F911BDD77C8A7B64371A2F73037FDBAA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/state.mpack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/PythonSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="353Vh8BL5Ltw1JrkcnJ9rj15CJr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Django 服务器.DjangoProject.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="DjangoProject" />
@@ -47,6 +118,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="DjangoProject.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -80,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762338858384</updated>
-      <workItem from="1762338859427" duration="1248000" />
+      <workItem from="1762338859427" duration="8083000" />
+      <workItem from="1762347993906" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -90,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762339952335</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="12345">
+      <option name="closed" value="true" />
+      <created>1762340422832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762340422832</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +179,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="上传代码" />
+    <MESSAGE value="12345" />
+    <MESSAGE value="111" />
+    <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
 </project>
