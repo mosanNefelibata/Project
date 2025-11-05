@@ -21,7 +21,6 @@ def register(request):
         username = request.POST.get('username')
         email = request.POST.get('email')
         password = request.POST.get('password')
-        # very basic validation
         errors = []
         if not username or not email or not password:
             errors.append('All fields are required')
