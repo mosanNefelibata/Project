@@ -38,7 +38,6 @@ def register(request):
 
 
 def login(request):
-    back_url = request.META.get('HTTP_REFERER', '/')
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -53,8 +52,8 @@ def login(request):
                 return redirect(reverse('home'))
         except User.DoesNotExist:
             errors.append('Invalid credentials')
-        return render(request, 'login.html', {'errors': errors, 'username': username, 'back_url': back_url})
-    return render(request, 'login.html', {'back_url': back_url})
+        return render(request, 'login.html', {'errors': errors, 'username': username })
+    return render(request, 'login.html')
 
 
 def logout(request):
