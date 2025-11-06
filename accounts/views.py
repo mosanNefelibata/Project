@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import User
 from django.urls import reverse
-from django.views.decorators.csrf import csrf_exempt
 
 
 def home(request):

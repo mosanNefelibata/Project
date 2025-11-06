@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="1">
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <updated>1762338858384</updated>
       <workItem from="1762338859427" duration="8083000" />
       <workItem from="1762347993906" duration="7196000" />
-      <workItem from="1762405267715" duration="1578000" />
+      <workItem from="1762405267715" duration="1867000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -162,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762406230526</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1">
+      <option name="closed" value="true" />
+      <created>1762437097822</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762437097822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
