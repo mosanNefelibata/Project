@@ -5,25 +5,25 @@
   <title>Simple Auth</title>
 </head>
 <body>
-  <nav>
-      <a href="{% url 'home' %}">Home</a> |
-      {% if request.session.username %}
-          <span>Welcome, {{ request.session.username }}</span> |
-          <a href="{% url 'logout' %}">Logout</a>
-      {% else %}
-          {% if request.path == '/login/' %}
-              <span>Logining...</span> |
-              <a href="{% url 'home' %}">Go back</a>
-          {% elif request.path == '/register/' %}
-              <span>Registering...</span>|
-              <a href="{% url 'home' %}">Go back</a>
-          {% else %}
-              <a href="{% url 'login' %}">Login</a>|
-              <a href="{% url 'register' %}">Register</a>
-          {% endif %}
-      {% endif %}
-  </nav>
-  <hr>
-  {% block content %}{% endblock %}
+    <nav>>
+         <a href="{% url 'home' %}">Home</a> |
+         {% if request.session.username %}
+            <span>Welcome, {{ request.session.username }}</span> |
+            <a href="{% url 'logout' %}">Logout</a>
+         {% else %}
+            {% if request.path == '/login/' %}
+               <span>Logining...</span> |
+               <a href="{% url 'home' %}">Go back</a>
+            {% elif request.path == '/register/' %}
+                <span>Registering...</span>|
+                <a href="{% url 'home' %}">Go back</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>|
+                <a href="{% url 'register' %}">Register</a>
+            {% endif %}
+         {% endif %}
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
 </body>
 </html>
