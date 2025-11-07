@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <updated>1762338858384</updated>
       <workItem from="1762338859427" duration="8083000" />
       <workItem from="1762347993906" duration="7196000" />
-      <workItem from="1762405267715" duration="9600000" />
+      <workItem from="1762405267715" duration="11706000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -199,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762521733420</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1">
+      <option name="closed" value="true" />
+      <created>1762528547733</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762528547733</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1">
+      <option name="closed" value="true" />
+      <created>1762528551063</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762528551063</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -45,13 +45,13 @@ def login(request):
         try:
             user = User.objects.get(username=username)
             if user.password != password:
-                errors.append('Invalid credentials')
+                errors.append('Incorrect password')
             else:
                 request.session['user_id'] = user.id
                 request.session['username'] = user.username
                 return redirect(reverse('home'))
         except User.DoesNotExist:
-            errors.append('Invalid credentials')
+            errors.append('User does not exist')
         return render(request, 'login.html', {'errors': errors, 'username': username })
     return render(request, 'login.html')
 
