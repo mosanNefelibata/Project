@@ -5,7 +5,7 @@
   <title>Simple Auth</title>
 </head>
 <body>
-    <nav>>
+    <nav>
          <a href="{% url 'home' %}">Home</a> |
          {% if request.session.username %}
             <span>Welcome, {{ request.session.username }}</span> |

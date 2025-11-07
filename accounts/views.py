@@ -12,6 +12,7 @@ def home(request):
         except User.DoesNotExist:
             request.session.pop('user_id', None)
             request.session.pop('username', None)
+            return redirect(reverse('home'))
     return render(request, 'home.html', {'user': user})
 
 
