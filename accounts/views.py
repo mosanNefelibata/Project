@@ -2,6 +2,11 @@ import email
 from django.shortcuts import render, redirect
 from .models import User
 from django.urls import reverse
+import random
+import string
+import time
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def home(request):
@@ -18,25 +23,107 @@ def home(request):
 
 
 def register(request):
+    # Two-step registration with email verification code.
     if request.method == 'POST':
-        username = request.POST.get('username')
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-        errors = []
-        if not username or not email or not password:
-            errors.append('All fields are required')
-        if User.objects.filter(username=username).exists():
-            errors.append('Username already taken')
-        if User.objects.filter(email=email).exists():
-            errors.append('Email already registered')
-        if not errors:
-            user = User.objects.create(username=username, email=email, password=password)
-            request.session.pop('user_id', None)
-            request.session.pop('username', None)
+        # Handle resend request first
+        if 'resend' in request.POST:
+            errors = []
+            pending = request.session.get('pending_user')
+            if not pending:
+                errors.append('No pending registration found. Please try registering again.')
+                return render(request, 'register.html', {'errors': errors})
+            # check expiry (10 minutes)
+            sent = pending.get('sent', 0)
+            if time.time() - sent > 10 * 60:
+                request.session.pop('pending_user', None)
+                errors.append('Verification code expired. Please register again.')
+                return render(request, 'register.html', {'errors': errors})
+
+            # regenerate code and update timestamp
+            code = ''.join(random.choices(string.digits, k=6))
+            pending['code'] = code
+            pending['sent'] = time.time()
+            request.session['pending_user'] = pending
+
+            email_addr = pending.get('email')
+            subject = 'Your verification code'
+            message = f'Your verification code is: {code}'
+            from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', None)
+            try:
+                send_mail(subject, message, from_email, [email_addr])
+                mailed = True
+            except Exception:
+                print(f'Failed to send email. Verification code for {email_addr}: {code}')
+                mailed = False
+
+            return render(request, 'verify_email.html', {'email': email_addr, 'mailed': mailed, 'message': 'Verification code resent.'})
+
+        # If this POST is submitting the verification code
+        verification_code = request.POST.get('verification_code')
+        if verification_code is not None:
+            errors = []
+            pending = request.session.get('pending_user')
+            if not pending:
+                errors.append('No pending registration found. Please try registering again.')
+                return render(request, 'register.html', {'errors': errors})
+            # check expiry (10 minutes)
+            sent = pending.get('sent', 0)
+            if time.time() - sent > 10 * 60:
+                request.session.pop('pending_user', None)
+                errors.append('Verification code expired. Please register again.')
+                return render(request, 'register.html', {'errors': errors})
+            if verification_code != pending.get('code'):
+                errors.append('Invalid verification code')
+                return render(request, 'verify_email.html', {'errors': errors, 'email': pending.get('email')})
+            # create user
+            username = pending.get('username')
+            email_addr = pending.get('email')
+            password = pending.get('password')
+            user = User.objects.create(username=username, email=email_addr, password=password)
+            # clear pending and set session
+            request.session.pop('pending_user', None)
             request.session['user_id'] = user.id
             request.session['username'] = user.username
             return redirect(reverse('home'))
-        return render(request, 'register.html', {'errors': errors, 'username': username, 'email': email})
+
+        # Initial registration submission: send verification code
+        username = request.POST.get('username')
+        email_addr = request.POST.get('email')
+        password = request.POST.get('password')
+        errors = []
+        if not username or not email_addr or not password:
+            errors.append('All fields are required')
+        if User.objects.filter(username=username).exists():
+            errors.append('Username already taken')
+        if User.objects.filter(email=email_addr).exists():
+            errors.append('Email already registered')
+        if errors:
+            return render(request, 'register.html', {'errors': errors, 'username': username, 'email': email_addr})
+
+        # generate verification code
+        code = ''.join(random.choices(string.digits, k=6))
+        # store pending registration in session with timestamp
+        request.session['pending_user'] = {
+            'username': username,
+            'email': email_addr,
+            'password': password,
+            'code': code,
+            'sent': time.time()
+        }
+
+        # try to send email, but don't fail registration if email backend not configured
+        subject = 'Your verification code'
+        message = f'Your verification code is: {code}'
+        from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', None)
+        try:
+            send_mail(subject, message, from_email, [email_addr])
+            mailed = True
+        except Exception:
+            # fallback: print to console so developer can see code in dev environment
+            print(f'Failed to send email. Verification code for {email_addr}: {code}')
+            mailed = False
+
+        return render(request, 'verify_email.html', {'email': email_addr, 'mailed': mailed})
     return render(request, 'register.html')
 
 
