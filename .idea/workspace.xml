@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/templates/change_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/delete_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/state.mpack" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/state.mpack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
