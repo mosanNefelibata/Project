@@ -17,7 +17,6 @@
         <button type="submit" name="verify">Verify</button>
     </form>
 
-    <!-- Resend button: separate form posts with name 'resend' so view handles resend logic -->
     <form method="post" style="margin-top:10px;">
         {% csrf_token %}
         <button type="submit" name="resend" value="1">Resend code</button>
