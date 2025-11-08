@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Delete Your Account</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete your account? </p>
+        <p>This action cannot be undone.</p>
+        <button type="submit">Confirm</button>
+    </form>
+    <form method="get">
+    <button type="button" onclick="Cancel()">Cancel</button>
+        <script>
+            function Cancel() { window.location.href = "{% url 'home' %}"}
+        </script>
+    </form>
+    {% if message %}
+        <ul>
+            <li style="color: limegreen">{{ message }}</li>
+            <li>The page will redirect in 5 seconds.</li>
+        </ul>
+        <script>
+            setTimeout(function () { window.location.href = "{% url 'home' %}";}, 5000);
+        </script>
+    {% endif %}
+{% endblock %}

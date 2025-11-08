@@ -3,6 +3,9 @@
     <h1>Home</h1>
     {% if user %}
         <p>Logged in as {{ user.username }} ({{ user.email }})</p>
+        <a href="{% url 'change_password' %}">Change Password</a> |
+        <a href="{% url 'change_email' %}">Change Email</a> |
+        <a href="{% url 'delete_account' %}">Delete Account</a>
     {% else %}
         <p>You are not logged in.</p>
     {% endif %}

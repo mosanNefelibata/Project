@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Change Your Email</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Email: <input type="email" name="email"></label><br>
+        {% if errors %}
+        <ul style="color: red;">
+            {% for e in errors %}
+                <li>{{ e }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+        <button type="submit">Change</button>
+    </form>
+    {% if message %}
+        <ul>
+            <li style="color: limegreen">{{ message }}</li>
+            <li>The page will redirect in 5 seconds.</li>
+        </ul>
+        <script>
+            const targetURL = "{% url 'home' %}"
+            const delayMs = 5000
+            setTimeout(function(){window.location.href = targetURL;}, delayMs);
+        </script>
+    {% endif %}
+{% endblock %}

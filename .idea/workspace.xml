@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="1">
+      <change afterPath="$PROJECT_DIR$/templates/change_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/delete_account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/state.mpack" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/4807DCAD27C0E044BD6FD50EBC26F245/state.mpack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/CodeChunks.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/CopilotIndices/17.14.1290.42047/SemanticSymbols.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DjangoProject/copilot-chat/8dd3ce9a/sessions/addc0748-c027-44e0-bd6f-d50ebc26f245" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,25 +30,32 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mosanNefelibata"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mosanNefelibata/Project.git&quot;,
+    &quot;accountId&quot;: &quot;8224aced-b0dd-4be9-9d7f-50a4da84438d&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mosanNefelibata/Project.git",
-    "accountId": "8224aced-b0dd-4be9-9d7f-50a4da84438d"
-  }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="353Vh8BL5Ltw1JrkcnJ9rj15CJr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +63,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django 服务器.DjangoProject.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
@@ -107,7 +126,9 @@
       <updated>1762338858384</updated>
       <workItem from="1762338859427" duration="8083000" />
       <workItem from="1762347993906" duration="7196000" />
-      <workItem from="1762405267715" duration="11706000" />
+      <workItem from="1762405267715" duration="20206000" />
+      <workItem from="1762540268319" duration="1909000" />
+      <workItem from="1762543585396" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -213,7 +234,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762528551063</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1">
+      <option name="closed" value="true" />
+      <created>1762531717247</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1762531717248</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1">
+      <option name="closed" value="true" />
+      <created>1762531724935</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762531724935</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
