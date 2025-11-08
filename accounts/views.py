@@ -1,4 +1,3 @@
-import email
 from django.shortcuts import render, redirect
 from .models import User
 from django.urls import reverse
