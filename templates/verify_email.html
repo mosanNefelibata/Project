@@ -2,14 +2,13 @@
 {% block content %}
     <h1>Verify Your Email</h1>
     <p>A verification code has been sent to {{ email }}.</p>
-    <ul><li style="color: red;">{% if not mailed %}Email sending failed in this environment, please check server logs{% endif %}</li></ul>
-    {% if errors %}
-        <ul style="color: red;">
-            {% for e in errors %}
-                <li>{{ e }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+    <ul>
+        {% if not mailed %}<li style="color: red;">Email sending failed in this environment, please check server logs</li>{% endif %}
+
+        {% if message == 'Verification code resent.'%}<li style="color: limegreen">{{ message }}</li>{% endif %}
+
+        {% if errors %}{% for e in errors %}<li style="color: red">{{ e }}</li>{% endfor %}{% endif %}
+    </ul>
 
     <form method="post">
         {% csrf_token %}
@@ -22,7 +21,7 @@
         <button type="submit" name="resend" value="1">Resend code</button>
     </form>
 
-    {% if message %}
+    {% if message == 'Register successfully' %}
         <ul>
             <li style="color: limegreen">{{ message }}</li>
             <li>The page will redirect in 5 seconds.</li>
