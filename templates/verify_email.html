@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Verify Your Email</h1>
+    <p>A verification code has been sent to {{ email }}.</p>
+    <ul><li style="color: red;">{% if not mailed %}Email sending failed in this environment, please check server logs{% endif %}</li></ul>
+    {% if errors %}
+        <ul style="color: red;">
+            {% for e in errors %}
+                <li>{{ e }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <label>Verification code: <input type="text" name="verification_code"></label><br>
+        <button type="submit" name="verify">Verify</button>
+    </form>
+
+    <!-- Resend button: separate form posts with name 'resend' so view handles resend logic -->
+    <form method="post" style="margin-top:10px;">
+        {% csrf_token %}
+        <button type="submit" name="resend" value="1">Resend code</button>
+    </form>
+
+    {% if message %}
+        <ul>
+            <li style="color: limegreen">{{ message }}</li>
+            <li>The page will redirect in 5 seconds.</li>
+        </ul>
+        <script>
+            const targetURL = "{% url 'home' %}"
+            const delayMs = 5000
+            setTimeout(function(){window.location.href = targetURL;}, delayMs);
+        </script>
+    {% endif %}
+{% endblock %}
