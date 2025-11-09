@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="尚未配置SMTP，仅在控制台打印验证码">
+    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="提高代码可读性，修复小bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/verify_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/verify_email.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
       <workItem from="1762405267715" duration="20206000" />
       <workItem from="1762540268319" duration="1909000" />
       <workItem from="1762543585396" duration="3185000" />
-      <workItem from="1762564745635" duration="11619000" />
+      <workItem from="1762564745635" duration="13957000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />
@@ -288,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762573785246</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="提高代码可读性，修复小bug">
+      <option name="closed" value="true" />
+      <created>1762592108219</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1762592108219</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +316,7 @@
     <MESSAGE value="111" />
     <MESSAGE value="1" />
     <MESSAGE value="尚未配置SMTP，仅在控制台打印验证码" />
-    <option name="LAST_COMMIT_MESSAGE" value="尚未配置SMTP，仅在控制台打印验证码" />
+    <MESSAGE value="提高代码可读性，修复小bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="提高代码可读性，修复小bug" />
   </component>
 </project>

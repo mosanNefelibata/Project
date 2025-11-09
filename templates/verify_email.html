@@ -4,10 +4,10 @@
     <p>A verification code has been sent to {{ email }}.</p>
     <ul>
         {% if not mailed %}<li style="color: red;">Email sending failed in this environment, please check server logs</li>{% endif %}
+        
+        {% if errors %}{% for e in errors %}<li style="color: red">{{ e }}</li>{% endfor %}{% endif %}
 
         {% if message == 'Verification code resent.'%}<li style="color: limegreen">{{ message }}</li>{% endif %}
-
-        {% if errors %}{% for e in errors %}<li style="color: red">{{ e }}</li>{% endfor %}{% endif %}
     </ul>
 
     <form method="post">
