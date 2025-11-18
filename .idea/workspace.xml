@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="提高代码可读性，修复小bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sinis/Desktop/Django/DjangoProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -114,7 +117,9 @@
       <workItem from="1762405267715" duration="20206000" />
       <workItem from="1762540268319" duration="1909000" />
       <workItem from="1762543585396" duration="3185000" />
-      <workItem from="1762564745635" duration="13957000" />
+      <workItem from="1762564745635" duration="21959000" />
+      <workItem from="1763295116644" duration="30000" />
+      <workItem from="1763296356301" duration="9831000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <option name="closed" value="true" />

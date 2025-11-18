@@ -209,6 +209,6 @@ def delete_account(request):
         except User.DoesNotExist:
             pass
         request.session.pop('user_id', None)
-        request.session.pop('username', None)
-        return render(request, 'delete_account.html', {'message': 'Your account has been deleted.'})
+        delete_acc = request.session.pop('username', None)
+        return render(request, 'delete_account.html', {'message': f'Your account({delete_acc}) has been deleted.'})
     return render(request, 'delete_account.html')
