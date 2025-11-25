@@ -118,6 +118,21 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Serve the project-level `static/` directory during development
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
+
+# Media files (uploaded by users)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# Default from email for sending verification mails
+DEFAULT_FROM_EMAIL = 'noreply@example.com'
+
+# (Optional) where `collectstatic` will collect files for production
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

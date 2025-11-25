@@ -1,0 +1,59 @@
+/* Simple styling for the Simple Auth app */
+:root{
+    --bg: #0f1724;
+    --card: #0b1220;
+    --muted: #9aa4b2;
+    --accent: #4f46e5;
+    --accent-2: #6366f1;
+    --success: #10b981;
+    --danger: #ef4444;
+    --text: #e6eef8;
+    --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing: border-box}
+html,body{height:100%;margin:0;font-family: Inter, Roboto, Arial, sans-serif;background: linear-gradient(180deg,#071026 0%, #081127 100%);color:var(--text)}
+.container{max-width:980px;margin:28px auto;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+.site-nav{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:14px 18px;background:var(--glass);border-radius:8px}
+.site-nav a{color:var(--text);text-decoration:none;padding:6px 10px;border-radius:6px}
+.site-nav a:hover{background:rgba(79,70,229,0.12);color:var(--accent)}
+.nav-welcome{font-weight:600;color:var(--muted)}
+h1{margin-top:0;font-size:1.6rem}
+
+/* Form elements */
+.form-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:20px;align-items:start}
+.form-card{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+.field{margin:10px 0}
+label{display:block;color:var(--muted);font-size:0.95rem}
+input[type=text],input[type=password],input[type=email],input[type=number],select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);margin-top:6px}
+input[type=file]{margin-top:8px}
+.checkbox-row{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+
+/* Avatar */
+.avatar-box{display:flex;flex-direction:column;align-items:center;gap:12px}
+.avatar-preview{width:180px;height:180px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(255,255,255,0.04)}
+.avatar-preview img{width:100%;height:100%;object-fit:cover}
+.avatar-placeholder{font-size:64px;color:var(--muted)}
+
+/* Buttons */
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+.btn-danger{background:var(--danger);color:white}
+.btn + .btn{margin-left:8px}
+
+/* Profile page */
+.profile{display:flex;gap:24px;align-items:flex-start}
+.profile .info{flex:1}
+.info p{margin:8px 0}
+.info .meta{color:var(--muted);font-size:0.95rem}
+
+/* Security page */
+.security-list{display:flex;flex-direction:column;gap:12px}
+.security-item{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:8px;background:var(--glass)}
+
+@media (max-width:900px){
+    .form-grid{grid-template-columns:1fr}
+    .avatar-preview{width:140px;height:140px}
+    .profile{flex-direction:column;align-items:center}
+}

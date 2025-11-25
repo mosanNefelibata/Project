@@ -21,10 +21,10 @@
         <button type="submit" name="resend" value="1">Resend code</button>
     </form>
 
-    {% if message == 'Register successfully' %}
+    {% if message == 'Register successfully' or message == 'Email has been changed successfully.' %}
         <ul>
             <li style="color: limegreen">{{ message }}</li>
-            <li>The page will redirect in 5 seconds.</li>
+            <li>The page will redirect to home in 5 seconds.</li>
         </ul>
         <script>
             const targetURL = "{% url 'home' %}"

@@ -4,99 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="提高代码可读性，修复小bug">
+    <list default="true" id="014d7496-7355-43a0-9d5a-26634e3e9940" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {}
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mosanNefelibata/Project.git&quot;,
-    &quot;accountId&quot;: &quot;8224aced-b0dd-4be9-9d7f-50a4da84438d&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mosanNefelibata"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="353Vh8BL5Ltw1JrkcnJ9rj15CJr" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mosanNefelibata/Project",
+    "accountId": "8224aced-b0dd-4be9-9d7f-50a4da84438d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="35vagmUREtsNJQHqz4ThfcnSJiQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django 服务器.DjangoProject.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sinis/Desktop/Django/DjangoProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
-      <module name="DjangoProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="DjangoProject.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,221 +59,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="d813d409-b26f-4f98-97c8-1029f49982a4" name="更改" comment="" />
-      <created>1762338858384</created>
+      <changelist id="014d7496-7355-43a0-9d5a-26634e3e9940" name="更改" comment="" />
+      <created>1763993117667</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1762338858384</updated>
-      <workItem from="1762338859427" duration="8083000" />
-      <workItem from="1762347993906" duration="7196000" />
-      <workItem from="1762405267715" duration="20206000" />
-      <workItem from="1762540268319" duration="1909000" />
-      <workItem from="1762543585396" duration="3185000" />
-      <workItem from="1762564745635" duration="21959000" />
-      <workItem from="1763295116644" duration="30000" />
-      <workItem from="1763296356301" duration="9831000" />
+      <updated>1763993117667</updated>
+      <workItem from="1763993119351" duration="490000" />
     </task>
-    <task id="LOCAL-00001" summary="123">
-      <option name="closed" value="true" />
-      <created>1762339952335</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1762339952335</updated>
-    </task>
-    <task id="LOCAL-00002" summary="12345">
-      <option name="closed" value="true" />
-      <created>1762340422832</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1762340422832</updated>
-    </task>
-    <task id="LOCAL-00003" summary="111">
-      <option name="closed" value="true" />
-      <created>1762348269776</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1762348269776</updated>
-    </task>
-    <task id="LOCAL-00004" summary="111">
-      <option name="closed" value="true" />
-      <created>1762348284445</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1762348284445</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1">
-      <option name="closed" value="true" />
-      <created>1762352518849</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1762352518849</updated>
-    </task>
-    <task id="LOCAL-00006" summary="1">
-      <option name="closed" value="true" />
-      <created>1762404988213</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1762404988213</updated>
-    </task>
-    <task id="LOCAL-00007" summary="1">
-      <option name="closed" value="true" />
-      <created>1762406230526</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1762406230526</updated>
-    </task>
-    <task id="LOCAL-00008" summary="1">
-      <option name="closed" value="true" />
-      <created>1762437097822</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1762437097822</updated>
-    </task>
-    <task id="LOCAL-00009" summary="1">
-      <option name="closed" value="true" />
-      <created>1762437204094</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1762437204094</updated>
-    </task>
-    <task id="LOCAL-00010" summary="1">
-      <option name="closed" value="true" />
-      <created>1762521709134</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1762521709134</updated>
-    </task>
-    <task id="LOCAL-00011" summary="1">
-      <option name="closed" value="true" />
-      <created>1762521733420</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1762521733420</updated>
-    </task>
-    <task id="LOCAL-00012" summary="1">
-      <option name="closed" value="true" />
-      <created>1762528547733</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1762528547733</updated>
-    </task>
-    <task id="LOCAL-00013" summary="1">
-      <option name="closed" value="true" />
-      <created>1762528551063</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1762528551063</updated>
-    </task>
-    <task id="LOCAL-00014" summary="1">
-      <option name="closed" value="true" />
-      <created>1762531717247</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1762531717248</updated>
-    </task>
-    <task id="LOCAL-00015" summary="1">
-      <option name="closed" value="true" />
-      <created>1762531724935</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1762531724935</updated>
-    </task>
-    <task id="LOCAL-00016" summary="1">
-      <option name="closed" value="true" />
-      <created>1762564759382</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1762564759382</updated>
-    </task>
-    <task id="LOCAL-00017" summary="1">
-      <option name="closed" value="true" />
-      <created>1762565130677</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1762565130677</updated>
-    </task>
-    <task id="LOCAL-00018" summary="尚未配置SMTP，仅在控制台打印验证码">
-      <option name="closed" value="true" />
-      <created>1762572792977</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1762572792977</updated>
-    </task>
-    <task id="LOCAL-00019" summary="尚未配置SMTP，仅在控制台打印验证码">
-      <option name="closed" value="true" />
-      <created>1762572864676</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1762572864676</updated>
-    </task>
-    <task id="LOCAL-00020" summary="尚未配置SMTP，仅在控制台打印验证码">
-      <option name="closed" value="true" />
-      <created>1762573751600</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1762573751600</updated>
-    </task>
-    <task id="LOCAL-00021" summary="尚未配置SMTP，仅在控制台打印验证码">
-      <option name="closed" value="true" />
-      <created>1762573785246</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1762573785246</updated>
-    </task>
-    <task id="LOCAL-00022" summary="提高代码可读性，修复小bug">
-      <option name="closed" value="true" />
-      <created>1762592108219</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1762592108219</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="123" />
-    <MESSAGE value="上传代码" />
-    <MESSAGE value="12345" />
-    <MESSAGE value="111" />
-    <MESSAGE value="1" />
-    <MESSAGE value="尚未配置SMTP，仅在控制台打印验证码" />
-    <MESSAGE value="提高代码可读性，修复小bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="提高代码可读性，修复小bug" />
   </component>
 </project>

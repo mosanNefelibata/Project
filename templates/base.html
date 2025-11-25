@@ -1,32 +1,43 @@
 <!doctype html>
+{% load static %}
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Simple Auth</title>
+  <title>Blind Boxes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <nav>
-        <a href="{% url 'home' %}">Home</a> |
-        {% if request.session.username %}
-            <span>Welcome, {{ request.session.username }}</span> |
-            <a href="{% url 'logout' %}">Logout</a>
-            {% if request.path == '/change_password/' or request.path == "/change_email/" %}
-            | <a href="{% url 'home' %}">Go back</a>
-            {% endif %} 
-        {% else %}
-            {% if request.path == '/login/' %}
-                <span>Logining...</span> |
-                <a href="{% url 'home' %}">Go back</a>
-            {% elif request.path == '/register/' %}
-                <span>Registering...</span>|
-                <a href="{% url 'home' %}">Go back</a>
+    <header>
+        <nav class="site-nav">
+            <a href="{% url 'home' %}">Home</a> |
+            {% if request.session.username %}
+                <a href="{% url 'profile' %}">Profile</a> |
+                <span class="nav-welcome">Welcome, {{ request.session.username }}</span> |
+                <a href="{% url 'logout' %}">Logout</a>
+                {% if request.path == '/change_password/' or request.path == "/change_email/" %}
+                | <a href="{% url 'home' %}">Go back</a>
+                {% endif %} 
             {% else %}
-                <a href="{% url 'login' %}">Login</a>|
-                <a href="{% url 'register' %}">Register</a>
+                {% if request.path == '/login/' %}
+                    <span>Logining...</span> |
+                    <a href="{% url 'home' %}">Go back</a>
+                {% elif request.path == '/register/' %}
+                    <span>Registering...</span>|
+                    <a href="{% url 'home' %}">Go back</a>
+                {% else %}
+                    <a href="{% url 'login' %}">Login</a>|
+                    <a href="{% url 'register' %}">Register</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
-    </nav>
+        </nav>
+    </header>
     <hr>
-    {% block content %}{% endblock %}
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">
+        <p>Simple Auth &middot; Example</p>
+    </footer>
 </body>
 </html>

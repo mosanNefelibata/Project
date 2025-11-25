@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Edit Profile</h1>
+{% if errors %}
+    <ul style="color:red;">{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+{% endif %}
+<form method="post" enctype="multipart/form-data" class="form-card">
+    {% csrf_token %}
+    <div class="form-grid">
+        <div class="avatar-box">
+            <div class="avatar-preview">
+                {% if user.avatar %}
+                    <img src="{{ user.avatar.url }}" alt="avatar">
+                {% else %}
+                    <div class="avatar-placeholder">{{ user.username|first|upper }}</div>
+                {% endif %}
+            </div>
+            <label class="field">Avatar<br><input type="file" name="avatar"></label>
+            <div>
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a href="{% url 'profile' %}" class="btn btn-outline">Cancel</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="field">
+                <label>Gender:
+                    <select name="gender">
+                        <option value="M" {% if sel_gender_M %}selected{% endif %}, style="color: black;">Male</option>
+                        <option value="F" {% if sel_gender_F %}selected{% endif %}, style="color: black;">Female</option>
+                        <option value="S" {% if sel_gender_S %}selected{% endif %}, style="color: black;">Secret</option>
+                    </select>
+                </label>
+            </div>
+            <div class="field"><label>Age: <input type="number" name="age" value="{{ user.age }}"></label></div>
+            <div class="field">
+                <label>Education:
+                    <select name="education">
+                        <option value="Bachelor" {% if sel_edu_Bachelor %}selected{% endif %}, style="color:black;">Bachelor</option>
+                        <option value="Master" {% if sel_edu_Master %}selected{% endif %}, style="color:black;">Master</option>
+                        <option value="PhD" {% if sel_edu_PhD %}selected{% endif %}, style="color:black;">PhD</option>
+                        <option value="Other" {% if sel_edu_Other %}selected{% endif %}, style="color:black;">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="field"><label>School: <input type="text" name="school" value="{{ user.school }}"></label></div>
+            <div class="field"><label>Height (cm): <input type="number" name="height_cm" value="{{ user.height_cm }}"></label></div>
+            <div class="field"><label>Weight (kg): <input type="number" name="weight_kg" value="{{ user.weight_kg }}"></label></div>
+
+            <h3>Privacy settings</h3>
+            <div class="checkbox-row">
+                <label><input type="checkbox" name="show_gender" {% if user.show_gender %}checked{% endif %}> Show gender</label>
+                <label><input type="checkbox" name="show_age" {% if user.show_age %}checked{% endif %}> Show age</label>
+                <label><input type="checkbox" name="show_education" {% if user.show_education %}checked{% endif %}> Show education</label>
+                <label><input type="checkbox" name="show_school" {% if user.show_school %}checked{% endif %}> Show school</label>
+                <label><input type="checkbox" name="show_height" {% if user.show_height %}checked{% endif %}> Show height</label>
+                <label><input type="checkbox" name="show_weight" {% if user.show_weight %}checked{% endif %}> Show weight</label>
+                <label><input type="checkbox" name="show_email" {% if user.show_email %}checked{% endif %}> Show email</label>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

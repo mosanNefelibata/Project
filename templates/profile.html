@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Profile - {{ user.username }}</h1>
+<div class="profile">
+    <div class="avatar-box">
+        <div class="avatar-preview">
+            {% if user.avatar %}
+                <img src="{{ user.avatar.url }}" alt="avatar">
+            {% else %}
+                <div class="avatar-placeholder">{{ user.username|first|upper }}</div>
+            {% endif %}
+        </div>
+        <div class="meta">{{ user.username }}</div>
+    </div>
+    <div class="info">
+        <p><strong>Gender:</strong> {% if user.show_gender %}{{ user.get_gender_display }}{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>Age:</strong> {% if user.show_age %}{{ user.age|default:'N/A' }}{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>Education:</strong> {% if user.show_education %}{{ user.education }}{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>School:</strong> {% if user.show_school %}{{ user.school }}{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>Height:</strong> {% if user.show_height %}{{ user.height_cm|default:'N/A' }} cm{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>Weight:</strong> {% if user.show_weight %}{{ user.weight_kg|default:'N/A' }} kg{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+        <p><strong>Email:</strong> {% if user.show_email %}{{ user.email }}{% else %}<span class="meta">Hidden</span>{% endif %}</p>
+
+        <p style="margin-top:18px;">
+            <a class="btn btn-primary" href="{% url 'edit_profile' %}">Edit Profile</a>
+            <a class="btn btn-outline" href="{% url 'profile_security' %}">Security Settings</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

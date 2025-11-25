@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Security Settings</h1>
+<div class="security-list">
+    <div class="security-item">
+        <div>Change password</div>
+        <div><a class="btn btn-primary" href="{% url 'change_password' %}">Change</a></div>
+    </div>
+    <div class="security-item">
+        <div>Change email</div>
+        <div><a class="btn btn-primary" href="{% url 'change_email' %}">Change</a></div>
+    </div>
+    <div class="security-item">
+        <div>Delete account</div>
+        <div><a class="btn btn-danger" href="{% url 'delete_account' %}">Delete</a></div>
+    </div>
+</div>
+{% endblock %}
