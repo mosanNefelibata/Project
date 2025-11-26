@@ -23,6 +23,12 @@ def home(request):
 
 
 def register(request):
+    # 判断登录情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if username and user_id:
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         #判断是否需要重新发送
         if 'resend' in request.POST: 
@@ -124,7 +130,13 @@ def register(request):
 
 
 def login(request):
-        #检查是否提交用户名和密码
+    # 判断登录情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if username and user_id:
+        return redirect(reverse('home'))
+
+    #检查是否提交用户名和密码
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -146,6 +158,12 @@ def login(request):
 
 
 def logout(request):
+    # 判断登录情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if not username or not user_id:
+        return redirect(reverse('login'))
+
     #弹出用户名和邮箱，跳转到主页
     request.session.pop('user_id', None)
     request.session.pop('username', None)
@@ -153,6 +171,12 @@ def logout(request):
 
 
 def change_password(request):
+    # 判断登录情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if not username or not user_id:
+        return redirect(reverse('login'))
+
     #检查是否提交密码
     if request.method == 'POST':
         errors = []
@@ -279,14 +303,13 @@ def change_email(request):
 
 
 def delete_account(request):
-    #获取当前用户名和ID
+    #判断登陆情况
     username = request.session.get('username')
     user_id = request.session.get('user_id')
-    email = User.objects.get(username=username).email
-    print(email)
     if not username or not user_id:
         return redirect(reverse('login'))
 
+    email = User.objects.get(username=username).email
     if request.method == 'POST':
         #尝试删除用户信息
         try:
@@ -302,6 +325,12 @@ def delete_account(request):
 
 
 def profile(request):
+    #判断登陆情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if not username or not user_id:
+        return redirect(reverse('login'))
+
     user_id = request.session.get('user_id')
     user = None
     if user_id:
@@ -317,6 +346,12 @@ def profile(request):
 
 
 def edit_profile(request):
+    #判断登陆情况
+    username = request.session.get('username')
+    user_id = request.session.get('user_id')
+    if not username or not user_id:
+        return redirect(reverse('login'))
+
     user_id = request.session.get('user_id')
     username = request.session.get('username')
     if not user_id or not username:
@@ -371,7 +406,7 @@ def edit_profile(request):
         except ValueError:
             errors.append('Invalid weight')
 
-        # Privacy
+        # 隐私设置
         user.show_gender = True if request.POST.get('show_gender') == 'on' else False
         user.show_age = True if request.POST.get('show_age') == 'on' else False
         user.show_education = True if request.POST.get('show_education') == 'on' else False
@@ -380,7 +415,7 @@ def edit_profile(request):
         user.show_weight = True if request.POST.get('show_weight') == 'on' else False
         user.show_email = True if request.POST.get('show_email') == 'on' else False
 
-        # Handle avatar upload
+        # 头像上传
         if 'avatar' in request.FILES:
             avatar = request.FILES['avatar']
             user.avatar.save(avatar.name, avatar)
@@ -395,8 +430,9 @@ def edit_profile(request):
 
 
 def profile_security(request):
-    # just render linking page to existing security actions
+    #判断登陆情况
+    username = request.session.get('username')
     user_id = request.session.get('user_id')
-    if not user_id:
+    if not username or not user_id:
         return redirect(reverse('login'))
     return render(request, 'profile_security.html')

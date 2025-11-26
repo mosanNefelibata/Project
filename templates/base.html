@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="GBK">
   <title>Blind Boxes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -10,26 +10,20 @@
 <body>
     <header>
         <nav class="site-nav">
-            <a href="{% url 'home' %}">Home</a> |
-            {% if request.session.username %}
-                <a href="{% url 'profile' %}">Profile</a> |
-                <span class="nav-welcome">Welcome, {{ request.session.username }}</span> |
-                <a href="{% url 'logout' %}">Logout</a>
-                {% if request.path == '/change_password/' or request.path == "/change_email/" %}
-                | <a href="{% url 'home' %}">Go back</a>
-                {% endif %} 
-            {% else %}
-                {% if request.path == '/login/' %}
-                    <span>Logining...</span> |
-                    <a href="{% url 'home' %}">Go back</a>
-                {% elif request.path == '/register/' %}
-                    <span>Registering...</span>|
-                    <a href="{% url 'home' %}">Go back</a>
+            <div class="nav-left">
+                <span class="site-title">Blind Boxes</span>
+                <a href="{% url 'home' %}">Home</a>
+            </div>
+            <div class="nav-right">
+                {% if request.session.username %}
+                    <span class="nav-welcome">Welcome, {{ request.session.username }}</span>
+                    <a href="{% url 'profile' %}">Profile</a>
+                    <a href="{% url 'logout' %}">Logout</a>
                 {% else %}
-                    <a href="{% url 'login' %}">Login</a>|
+                    <a href="{% url 'login' %}">Login</a>
                     <a href="{% url 'register' %}">Register</a>
                 {% endif %}
-            {% endif %}
+            </div>
         </nav>
     </header>
     <hr>
@@ -37,7 +31,7 @@
         {% block content %}{% endblock %}
     </main>
     <footer class="site-footer">
-        <p> @ 2025 Blind Boxes &middot; Powered by Django &middot; Mysql &middot; InkyUmbrella</p>
+        <p> @ 2025 Blind Boxes &middot; Powered by Django &middot; Mysql &middot; InkyUmbrella &middot; All rights reserved.</p>
         <p></p>
     </footer>
 </body>
