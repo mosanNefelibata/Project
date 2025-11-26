@@ -11,17 +11,20 @@
     </ul>
 
     <form method="post">
-        {% csrf_token %}
-        <label>Verification code: <input type="text" name="verification_code"></label><br>
-        <button type="submit" class="btn btn-primary" name="verify">Verify</button>
+        <p style="margin-top:18px">
+            {% csrf_token %}
+            <label>Verification code: <input type="text" name="verification_code"></label><br>
+            <button type="submit" class="btn btn-primary" name="verify">Verify</button>
+
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary" name="resend" value="1">Resend code</button>
+
+            <a class="btn btn-outline" href="{% url 'register' %}">Go back</a>
+        </p>
     </form>
 
-    <form method="post" style="margin-top:10px;">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-primary" name="resend" value="1">Resend code</button>
-    </form>
+{% if message == 'Register successfully' or message == 'Email has been changed successfully' %}
 
-    {% if message == 'Register successfully' or message == 'Email has been changed successfully.' %}
         <ul>
             <li style="color: limegreen">{{ message }}</li>
             <li>The page will redirect to home in 5 seconds.</li>
