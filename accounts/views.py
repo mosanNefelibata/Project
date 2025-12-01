@@ -1,13 +1,13 @@
 import email
-from django.shortcuts import render, redirect
-from .models import User
-from django.urls import reverse
 import random
 import string
 import time
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import User, Message
+from django.urls import reverse
 from django.core.mail import send_mail
 from django.conf import settings
-
+from django.utils import timezone
 
 def home(request):
     user_id = request.session.get('user_id')
@@ -324,25 +324,26 @@ def delete_account(request):
     return render(request, 'delete_account.html')
 
 
-def profile(request):
+def profile(request,interviewee_id):
     #判断登陆情况
     username = request.session.get('username')
     user_id = request.session.get('user_id')
     if not username or not user_id:
         return redirect(reverse('login'))
-
-    user_id = request.session.get('user_id')
-    user = None
-    if user_id:
+    interviewed_user = None
+    privacy_setting = False
+    if interviewee_id:
         try:
-            user = User.objects.get(id=user_id)
+            interviewed_user = User.objects.get(id=interviewee_id)
+            if interviewee_id != user_id:
+                privacy_setting = True
         except User.DoesNotExist:
             request.session.pop('user_id', None)
             request.session.pop('username', None)
             return redirect(reverse('home'))
     else:
         return redirect(reverse('login'))
-    return render(request, 'profile.html', {'user': user})
+    return render(request, 'profile.html',{'user':interviewed_user , 'privacy_setting':privacy_setting})
 
 
 def edit_profile(request):
@@ -436,3 +437,68 @@ def profile_security(request):
     if not username or not user_id:
         return redirect(reverse('login'))
     return render(request, 'profile_security.html')
+
+
+def chats(request):
+    user_id = request.session.get('user_id')
+    if not user_id:
+        return redirect(reverse('login'))
+    current = User.objects.get(id=user_id)
+    # list other users who have exchanged messages with current
+    sent_ids = set(Message.objects.filter(sender=current).values_list('receiver', flat=True))
+    recv_ids = set(Message.objects.filter(receiver=current).values_list('sender', flat=True))
+    other_ids = list(sent_ids.union(recv_ids))
+    others = User.objects.filter(id__in=other_ids)
+    # latest message preview per user, include unread count
+    previews = []
+    for u in others:
+        last = Message.objects.filter(sender__in=[current, u], receiver__in=[current, u]).order_by('-timestamp').first()
+        unread_count = Message.objects.filter(sender=u, receiver=current, is_read=False).count()
+        previews.append({'user': u, 'last': last, 'unread': unread_count})
+    return render(request, 'chats.html', {'previews': previews})
+
+
+def chat_with(request, user_id):
+    me_id = request.session.get('user_id')
+    if not me_id:
+        return redirect(reverse('login'))
+    me = get_object_or_404(User, id=me_id)
+    other = get_object_or_404(User, id=user_id)
+
+    if request.method == 'POST':
+        content = request.POST.get('content')
+        if content:
+            Message.objects.create(sender=me, receiver=other, content=content)
+            return redirect(reverse('chat_with', args=[other.id]))
+
+    # mark messages as read where receiver is me
+    Message.objects.filter(sender=other, receiver=me, is_read=False).update(is_read=True)
+
+    messages = Message.objects.filter(sender__in=[me, other], receiver__in=[me, other]).order_by('timestamp')
+    return render(request, 'chat_with.html', {'messages': messages, 'other': other, 'me': me})
+
+
+def random_match(request):
+    # 随机抽取其他用户并展示资料，支持开始聊天或跳过
+    me_id = request.session.get('user_id')
+    if not me_id:
+        return redirect(reverse('login'))
+    me = get_object_or_404(User, id=me_id)
+
+    if request.method == 'POST':
+        action = request.POST.get('action')
+        other_id = request.POST.get('other_id')
+        if other_id:
+            other = get_object_or_404(User, id=int(other_id))
+            if action == 'start':
+                # 创建一条初始消息以便将对方加入消息列表
+                Message.objects.create(sender=me, receiver=other,content='Hi! - This is a greeting message.')
+                return redirect(reverse('chat_with', args=[other.id]))
+            elif action == 'skip':
+                return redirect(reverse('random_match'))
+    # GET 或无有效 POST 时随机抽取一个用户（排除自己）
+    candidates = list(User.objects.exclude(id__in=list(Message.objects.filter(sender_id=me.id).values_list('receiver_id',flat=True)) + [me.id]))
+    candidate = None
+    if candidates:
+        candidate = random.choice(candidates)
+    return render(request, 'random_match.html', {'candidate': candidate, 'me': me})

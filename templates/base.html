@@ -1,12 +1,14 @@
 <!doctype html>
 {% load static %}
 <html>
+
 <head>
-  <meta charset="GBK">
-  <title>Blind Boxes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="GBK">
+    <title>Blind Boxes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
     <header>
         <nav class="site-nav">
@@ -16,12 +18,12 @@
             </div>
             <div class="nav-right">
                 {% if request.session.username %}
-                    <span class="nav-welcome">Welcome, {{ request.session.username }}</span>
-                    <a href="{% url 'profile' %}">Profile</a>
-                    <a href="{% url 'logout' %}">Logout</a>
+                <span class="nav-welcome">Welcome, {{ request.session.username }}</span>
+                <a href="{% url 'profile' request.session.user_id %}">Profile</a>
+                <a href="{% url 'logout' %}">Logout</a>
                 {% else %}
-                    <a href="{% url 'login' %}">Login</a>
-                    <a href="{% url 'register' %}">Register</a>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'register' %}">Register</a>
                 {% endif %}
             </div>
         </nav>
@@ -31,8 +33,10 @@
         {% block content %}{% endblock %}
     </main>
     <footer class="site-footer">
-        <p> @ 2025 Blind Boxes &middot; Powered by Django &middot; Mysql &middot; InkyUmbrella &middot; All rights reserved.</p>
+        <p> @ 2025 Blind Boxes &middot; Powered by Django &middot; Mysql &middot; InkyUmbrella &middot; All rights
+            reserved.</p>
         <p></p>
     </footer>
 </body>
+
 </html>

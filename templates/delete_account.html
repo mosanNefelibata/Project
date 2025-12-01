@@ -5,14 +5,11 @@
         {% csrf_token %}
         <p>Are you sure you want to delete your account? </p>
         <p>This action cannot be undone.</p>
-        <button type="submit">Confirm</button>
+        <button type="submit" class="btn btn-danger">Confirm</button>
     </form>
-    <form method="get">
-    <button type="button" onclick="Cancel()">Cancel</button>
-        <script>
-            function Cancel() { window.location.href = "{% url 'home' %}"}
-        </script>
-    </form>
+    <p style="margin-top:18px">
+        <a class="btn btn-outline" href="{% url 'profile_security' %}">Go back</a>
+    </p>
     {% if message %}
         <ul>
             <li style="color: limegreen">{{ message }}</li>

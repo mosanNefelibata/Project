@@ -15,7 +15,7 @@
         <div><a class="btn btn-danger" href="{% url 'delete_account' %}">Delete</a></div>
     </div>
 
-        <div><a class="btn btn-outline" href="{% url 'profile' %}">Go back</a></div>
+        <div><a class="btn btn-outline" href="{% url 'profile' request.session.user_id %}">Go back</a></div>
 
 </div>
 {% endblock %}

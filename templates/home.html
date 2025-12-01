@@ -3,7 +3,12 @@
     <h1>Home</h1>
     {% if user %}
         <p>Logged in as {{ user.username }} ({{ user.email }})</p>
+        <div style="display:flex;gap:8px;margin-top:18px">
+            <a class="btn btn-primary" href="{% url 'chats' %}">View your message list</a>
+            <a class="btn btn-primary" href="{% url 'random_match' %}">Random matching</a>
+        </div>
     {% else %}
         <p>You are not logged in.</p>
     {% endif %}
+
 {% endblock %}

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>Register</h1>
+    <h3>Notice:Username cannot be changed.</h3>
     {% if errors %}
         <ul style="color: red;">
             {% for e in errors %}
@@ -13,6 +14,6 @@
         <label>Username: <input type="text" name="username" value="{{ username|default:'' }}"></label><br>
         <label>Email: <input type="email" name="email" value="{{ email|default:'' }}"></label><br>
         <label>Password: <input type="password" name="password"></label><br>
-        <button type="submit">Register</button>
+        <button type="submit" class="btn btn-primary">Register</button>
     </form>
 {% endblock %}

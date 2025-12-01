@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Chats</h1>
+<div class="chats-list">
+    {% if previews %}
+    <ul>
+        {% for p in previews %}
+        <li class="chat-row">
+            <a href="{% url 'chat_with' p.user.id %}">
+                <span class="chat-avatar">
+                    {% if p.user.avatar %}
+                    <img src="{{ p.user.avatar.url }}" alt="avatar">
+                    {% else %}
+                    <span class="avatar-placeholder small">{{ p.user.username|first|upper }}</span>
+                    {% endif %}
+                </span>
+                {% if p.unread and p.unread > 0 %}
+                <span class="unread-badge">{{ p.unread }}</span>
+                {% endif %}
+                <span class="chat-name">{{ p.user.username }}</span>
+                {% if p.last %}
+                <div class="meta">{{ p.last.content|truncatechars:40 }} ({{ p.last.timestamp|date:'Y-m-d H:i' }})</div>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No other users to chat with.</p>
+    {% endif %}
+</div>
+{% endblock %}

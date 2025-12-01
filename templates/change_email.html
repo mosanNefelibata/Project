@@ -7,11 +7,14 @@
         {% if errors %}
         <ul style="color: red;">
             {% for e in errors %}
-                <li>{{ e }}</li>
+            <li>{{ e }}</li>
             {% endfor %}
         </ul>
-    {% endif %}
-        <button type="submit">Change</button>
+        {% endif %}
+        <p style="margin-top:18px">
+            <button type="submit" class="btn btn-primary">Change</button>
+            <a class="btn btn-outline" href="{% url 'profile_security' %}">Go back</a>
+        </p>
     </form>
     {% if message %}
         <ul>

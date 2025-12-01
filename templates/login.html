@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
     <h1>Login</h1>
-    <h3>Notice:Username cannot be changed.</h3>
     {% if errors %}
-        <ul style="color: red;">
-            {% for e in errors %}
-                <li>{{ e }}</li>
-            {% endfor %}
-        </ul>
+    <ul style="color: red;">
+        {% for e in errors %}
+        <li>{{ e }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}
     <form method="post">
         {% csrf_token %}
         <label>Username: <input type="text" name="username" value="{{ username|default:'' }}"></label><br>
         <label>Password: <input type="password" name="password"></label><br>
-        <button type="submit">Login</button>
+        <button type="submit" class="btn btn-primary" style="margin-top:18px">Login</button>
     </form>
 {% endblock %}

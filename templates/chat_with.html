@@ -1,0 +1,43 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+<h1><a class="btn btn-outline" href="{% url 'chats' %}">Go back</a> Chat with {{ other.username }}</h1>
+<div class="chat-window">
+    <div class="messages">
+        {% for m in messages %}
+        <div class="message-row {% if m.sender.id == me.id %}out-row{% else %}in-row{% endif %}">
+            {% if m.sender.id != me.id %}
+            <a href="{% url 'profile' other.id %}">
+                <div class="avatar-col">
+                    {% if other.avatar %}
+                    <img src="{{ other.avatar.url }}" alt="avatar">
+                    {% else %}
+                    <div class="avatar-placeholder small">{{ other.username|first|upper }}</div>
+                    {% endif %}
+                </div>
+            </a>
+            {% endif %}
+            <div class="message">
+                <div class="meta">{{ m.sender.username }} · {{ m.timestamp|date:'F y, H:i' }}</div>
+                <div class="content">{{ m.content }}</div>
+            </div>
+            {% if m.sender.id == me.id %}
+            <a href="{% url 'profile' me.id %}">
+                <div class="avatar-col">
+                    {% if me.avatar %}
+                    <img src="{{ me.avatar.url }}" alt="avatar">
+                    {% else %}
+                    <div class="avatar-placeholder small">{{ me.username|first|upper }}</div>
+                    {% endif %}
+                </div>
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <form method="post" class="chat-form">
+        {% csrf_token %}
+        <input type="text" name="content" placeholder="Type a message..." autocomplete="off">
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+{% endblock %}
