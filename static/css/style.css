@@ -21,8 +21,10 @@ footer{
 
 /* 页面元素 */
 *{box-sizing: border-box}
-html,body{height:100%;margin:0;font-family: Inter, Roboto, Arial, sans-serif;background: linear-gradient(180deg,#071026 0%, #081127 100%);color:var(--text)}
-.container{max-width:980px;margin:28px auto;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+html,body{height:100%;margin:0;font-family: Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(180deg,#071026 0%, #081127 100%);color:var(--text)}
+.container{max-width:980px;margin:28px auto;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:12px;box-shadow:0 8px 32px rgba(2,6,23,0.6)}
 .site-nav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--glass);border-radius:8px}
 .nav-left{display:flex;align-items:center;gap:12px}
 .site-title{font-weight:700;font-size:1.1rem;color:var(--accent)}
@@ -37,7 +39,8 @@ h1{margin-top:0;font-size:1.6rem}
 .form-card{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
 .field{margin:10px 0}
 label{display:block;color:var(--muted);font-size:0.95rem}
-input[type=text],input[type=password],input[type=email],input[type=number],select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);margin-top:6px}
+input[type=text],input[type=password],input[type=email],input[type=number],select{width:100%;padding:10px;border-radius:8px;
+    border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);margin-top:6px}
 input[type=file]{margin-top:8px}
 .checkbox-row{display:flex;flex-direction:column;gap:6px;margin-top:8px}
 
@@ -78,10 +81,12 @@ input[type=file]{margin-top:8px}
 .chat-form input[type=text]{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)}
 
 /* 聊天列表头像与未读 */
-.chat-row{display:flex;align-items:center;gap:12px;padding:10px;border-bottom:1px solid rgba(255,255,255,0.02);position:relative;background:var(--glass);}
+.chat-row{display:flex;align-items:center;gap:12px;padding:10px;border-bottom:1px solid rgba(255,255,255,0.02);
+    position:relative;background:var(--glass);}
 .chat-row a{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;}
-.chat-avatar img{width:44px;height:44px;border-radius:8px;object-fit:cover}
-.avatar-placeholder.small{width:44px;height:44px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700}
+.chat-avatar img{width:44px;height:44px;border-radius:8px;object-fit:cover;margin-top: 6px}
+.avatar-placeholder.small{width:44px;height:44px;border-radius:8px;display:inline-flex;align-items:center;
+    justify-content:center;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700}
 .unread-badge{background:var(--danger);color:white;border-radius:999px;padding:4px 8px;font-size:0.85rem;position:absolute;right:12px}
 .chat-row .meta{display:block;color:var(--muted);font-size:0.9rem;margin-left:56px}
 
@@ -89,23 +94,16 @@ input[type=file]{margin-top:8px}
 .message-row{display:flex;align-items:flex-start;gap:12px;margin:8px 0}
 .in-row{justify-content:flex-start}
 .out-row{justify-content:flex-end}
-.avatar-col img{width:44px;height:44px;border-radius:8px;object-fit:cover}
-.avatar-col .avatar-placeholder.small{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700}
+.avatar-col img{width:44px;height:44px;border-radius:8px;margin-top:8px;object-fit:cover;}
+.avatar-col .avatar-placeholder.small{width:44px;height:44px;border-radius:8px;margin-top:8px;display:flex;align-items:center;
+    justify-content:center;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700}
 .message-row a { text-decoration:none;}
 /* 消息气泡 */
-.message{max-width:68%;display:flex;flex-direction:column;align-items:flex-start;}
-
-.out-row .message{align-items:flex-end}
-
+.message{max-width:68%;flex-direction:column;}
+.out-row .message{display:flex;align-items:flex-end}
 .message .meta{font-size:0.8rem;color:var(--muted);margin-bottom:6px}
-
 .message .content{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--glass);max-width:100%;word-wrap:break-word;width:auto;}
-
-/* 发送方样式 */
-.message.outgoing{margin-left:auto;text-align:right}
-.message.outgoing .content,
 .out-row .message .content{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
-
 
 @media (max-width:900px){
     .form-grid{grid-template-columns:1fr}

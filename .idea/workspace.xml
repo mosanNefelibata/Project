@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="014d7496-7355-43a0-9d5a-26634e3e9940" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+    <list default="true" id="014d7496-7355-43a0-9d5a-26634e3e9940" name="更改" comment="头像和消息上对齐">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chat_with.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chat_with.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chats.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/random_match.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/random_match.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +44,8 @@
   "keyToString": {
     "Django 服务器.未命名.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "发现新的/更新的数据库配置",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -116,11 +111,24 @@
       <workItem from="1764503824964" duration="16000" />
       <workItem from="1764583228492" duration="307000" />
       <workItem from="1764583558497" duration="214000" />
-      <workItem from="1764583817064" duration="7986000" />
+      <workItem from="1764583817064" duration="14337000" />
     </task>
+    <task id="LOCAL-00001" summary="头像和消息上对齐">
+      <option name="closed" value="true" />
+      <created>1764757732610</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764757732610</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="头像和消息上对齐" />
+    <option name="LAST_COMMIT_MESSAGE" value="头像和消息上对齐" />
   </component>
 </project>
