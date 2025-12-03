@@ -11,6 +11,8 @@
             {% endif %}
         </div>
         <div class="meta">{{ user.username }}</div>
+        {% if privacy_setting %}<a class="btn btn-outline" href="{% url 'chat_with' user.id %}">Go back</a>
+        {% else %} <a class="btn btn-outline" href="{% url 'chats' %}">Go back</a> {% endif %}
     </div>
     <div class="info">
         {% if privacy_setting %}

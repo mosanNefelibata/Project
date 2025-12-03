@@ -17,7 +17,7 @@
             </a>
             {% endif %}
             <div class="message">
-                <div class="meta">{{ m.sender.username }} · {{ m.timestamp|date:'F y, H:i' }}</div>
+                <div class="meta">{{ m.sender.username }} · {{ m.timestamp|date:'F d, D, H:i' }}</div>
                 <div class="content">{{ m.content }}</div>
             </div>
             {% if m.sender.id == me.id %}

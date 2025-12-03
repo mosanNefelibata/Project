@@ -425,7 +425,7 @@ def edit_profile(request):
             return render(request, 'edit_profile.html', make_context(user, {'errors': errors}))
 
         user.save()
-        return redirect(reverse('profile'))
+        return redirect(reverse('profile',kwargs={'interviewee_id':user_id}))
 
     return render(request, 'edit_profile.html', make_context(user))
 

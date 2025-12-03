@@ -6,26 +6,37 @@
     <div class="card-body">
         <div class="avatar-box">
             {% if candidate.avatar %}
-            <img src="{{ candidate.avatar.url }}" alt="avatar" style="width:120px;height:120px;border-radius:999px;object-fit:cover">
+            <img src="{{ candidate.avatar.url }}" alt="avatar"
+                style="width:120px;height:120px;border-radius:999px;object-fit:cover">
             {% else %}
-            <div class="avatar-placeholder" style="width:120px;height:120px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);font-size:48px">{{ candidate.username|first|upper }}</div>
+            <div class="avatar-placeholder"
+                style="width:120px;height:120px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.02);font-size:48px">
+                {{ candidate.username|first|upper }}</div>
             {% endif %}
         </div>
         <h3>{{ candidate.username }}</h3>
         <ul>
-            {% if candidate.show_gender and candidate.gender %}<li>Gender: {{ candidate.get_gender_display }}</li>{% endif %}
-            {% if candidate.show_age and candidate.age %}<li>Age: {{ candidate.age }}</li>{% endif %}
-            {% if candidate.show_education and candidate.education %}<li>Education: {{ candidate.education }}</li>{% endif %}
-            {% if candidate.show_school and candidate.school %}<li>School: {{ candidate.school }}</li>{% endif %}
-            {% if candidate.show_height and candidate.height_cm %}<li>Height: {{ candidate.height_cm }} cm</li>{% endif %}
-            {% if candidate.show_weight and candidate.weight_kg %}<li>Weight: {{ candidate.weight_kg }} kg</li>{% endif %}
-            {% if candidate.show_email and candidate.email %}<li>Email: {{ candidate.email }}</li>{% endif %}
+            {% if candidate.show_gender and candidate.gender %}
+            <li>Gender: {{ candidate.get_gender_display }}</li>{% endif %}
+            {% if candidate.show_age and candidate.age %}
+            <li>Age: {{ candidate.age }}</li>{% endif %}
+            {% if candidate.show_education and candidate.education %}
+            <li>Education: {{ candidate.education }}</li>{% endif %}
+            {% if candidate.show_school and candidate.school %}
+            <li>School: {{ candidate.school }}</li>{% endif %}
+            {% if candidate.show_height and candidate.height_cm %}
+            <li>Height: {{ candidate.height_cm }} cm</li>{% endif %}
+            {% if candidate.show_weight and candidate.weight_kg %}
+            <li>Weight: {{ candidate.weight_kg }} kg</li>{% endif %}
+            {% if candidate.show_email and candidate.email %}
+            <li>Email: {{ candidate.email }}</li>{% endif %}
         </ul>
         <form method="post" style="display:flex;gap:8px;margin-top:12px">
             {% csrf_token %}
             <input type="hidden" name="other_id" value="{{ candidate.id }}">
             <button class="btn btn-primary" name="action" value="start">Start to chat</button>
             <button class="btn btn-outline" name="action" value="skip">Skip</button>
+            <a class="btn btn-outline" href="{% url 'home' %}">Go back</a>
         </form>
     </div>
 </div>

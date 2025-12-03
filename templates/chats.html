@@ -14,13 +14,15 @@
                     <span class="avatar-placeholder small">{{ p.user.username|first|upper }}</span>
                     {% endif %}
                 </span>
+                <span class="chat-name">{{ p.user.username }}</span>
+                {% if p.last %}
+                <div class="meta">{{ p.last.content|truncatechars:40 }}<br>
+                    ({{ p.last.timestamp|date:'Y-m-d H:i' }})</div>
+                {% endif %}
                 {% if p.unread and p.unread > 0 %}
                 <span class="unread-badge">{{ p.unread }}</span>
                 {% endif %}
-                <span class="chat-name">{{ p.user.username }}</span>
-                {% if p.last %}
-                <div class="meta">{{ p.last.content|truncatechars:40 }} ({{ p.last.timestamp|date:'Y-m-d H:i' }})</div>
-                {% endif %}
+
             </a>
         </li>
         {% endfor %}
